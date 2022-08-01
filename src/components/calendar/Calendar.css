@@ -3,12 +3,12 @@
 
 :root {
     --fc-small-font-size: .85em;
-    --fc-page-bg-color: #fff;
+    --fc-page-bg-color: #ffdb57;
     --fc-neutral-bg-color: #60b6fb;
-    --fc-neutral-text-color: #808080;
-    --fc-border-color: #ddd;
+    --fc-neutral-text-color: #fff;
+    --fc-border-color: #fff;
 
-    --fc-button-text-color: #000;
+    --fc-button-text-color: #fff;
     --fc-button-bg-color: #60b6fb;
     --fc-button-border-color: #60b6fb;
     --fc-button-hover-bg-color: #60b6fb;
@@ -31,7 +31,7 @@
     --fc-non-business-color: rgba(215, 215, 215, 0.3);
     --fc-bg-event-color: rgb(143, 223, 130);
     --fc-bg-event-opacity: 0.1;
-    --fc-highlight-color: rgba(188, 232, 241, 0.3);
+    --fc-highlight-color: #fff;
     --fc-today-bg-color: #60b6fb;
     --fc-now-indicator-color: red;
 }
@@ -61,3 +61,11 @@
 .fc-prev-button {
     margin-right: 5px;
 }
+
+.fc-daygrid-day-frame {
+    background-color: #FFEBAD;
+}
+
+/* .fc-day-today {
+    background-color: #FFEBAD;
+} */
