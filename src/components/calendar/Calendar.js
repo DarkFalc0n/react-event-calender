@@ -11,8 +11,8 @@ import "./Calendar.css"
 
 const Calendar = () => {
 
-    const [events, setEvents] = useState();
-    const [holidays, setHolidays] = useState();
+    const [events, setEvents] = useState([]);
+    const [holidays, setHolidays] = useState([]);
 
     function parseHolidays(holidays) {
         const holidayEvents = [];
@@ -20,6 +20,7 @@ const Calendar = () => {
             holidayEvents.push({
                 start: holidays[i].date,
                 title: holidays[i].name,
+                backgroundColor: "#a2d6f9"
             })
         }
         return holidayEvents;
@@ -41,8 +42,9 @@ const Calendar = () => {
         const timeslots = await eventResponse.json();
         setEvents(createEvents(timeslots));
         setHolidays(parseHolidays(holidaydata));
-        console.log(holidaydata);
-     }, [])
+    }, [])
+    
+    console.log(holidays);
      
 
     const calendarRef = useRef();
@@ -63,7 +65,7 @@ const Calendar = () => {
             <div className="calendar-wrapper">
                 <CalendarModeToggler onChange = {(mode) => setMode(mode)} mode = {calendarMode}/>
                 <FullCalendar
-                    plugins={[dayGridPlugin] }
+                    plugins={[dayGridPlugin]}
                     initialView={calendarMode}
                     ref={calendarRef}
                     events={calendarMode === "dayGridMonth" ? [{
@@ -71,7 +73,7 @@ const Calendar = () => {
                         startTime: "00:00:00",
                         allDay: true,
                         color: "#dc562e",
-                    }] : { events }}
+                    }] :  events.concat(holidays) }
                 />
             </div>
         </div>
