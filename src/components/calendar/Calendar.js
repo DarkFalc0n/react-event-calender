@@ -11,7 +11,6 @@ const Calendar = () => {
 
     const [events, setEvents] = useState();
     function createEvents(timeslots) {
-        console.log(timeslots);
         const events = [];
         for (let i = 0; i < timeslots.length; i++){
             events.push({
@@ -45,10 +44,14 @@ const Calendar = () => {
             <div className="calendar-wrapper">
                 <CalendarModeToggler onChange = {(mode) => setMode(mode)} mode = {calendarMode}/>
                 <FullCalendar
-                  plugins={ [dayGridPlugin] }
+                    plugins={[dayGridPlugin]}
                     initialView={calendarMode}
                     ref={calendarRef}
-                    events={events}
+                    events={calendarMode === "dayGridMonth" ? [{
+                        title: `${events.length} slots`,
+                        startTime: "00:00:00",
+                        allDay: true,
+                    }] : { events }}
                 />
             </div>
         </div>
