@@ -1,0 +1,63 @@
+@import '@fullcalendar/common/main.css';
+@import '@fullcalendar/daygrid/main.css';
+
+:root {
+    --fc-small-font-size: .85em;
+    --fc-page-bg-color: #fff;
+    --fc-neutral-bg-color: #60b6fb;
+    --fc-neutral-text-color: #808080;
+    --fc-border-color: #ddd;
+
+    --fc-button-text-color: #000;
+    --fc-button-bg-color: #60b6fb;
+    --fc-button-border-color: #60b6fb;
+    --fc-button-hover-bg-color: #60b6fb;
+    --fc-button-hover-border-color: #60b6fb;
+    --fc-button-active-bg-color: #60b6fb;
+    --fc-button-active-border-color: #60b6fb;
+
+    --fc-event-bg-color: #3788d8;
+    --fc-event-border-color: #3788d8;
+    --fc-event-text-color: #fff;
+    --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+
+    --fc-more-link-bg-color: #d0d0d0;
+    --fc-more-link-text-color: inherit;
+
+    --fc-event-resizer-thickness: 8px;
+    --fc-event-resizer-dot-total-width: 8px;
+    --fc-event-resizer-dot-border-width: 1px;
+
+    --fc-non-business-color: rgba(215, 215, 215, 0.3);
+    --fc-bg-event-color: rgb(143, 223, 130);
+    --fc-bg-event-opacity: 0.1;
+    --fc-highlight-color: rgba(188, 232, 241, 0.3);
+    --fc-today-bg-color: #60b6fb;
+    --fc-now-indicator-color: red;
+}
+
+.page-center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.calendar-wrapper {
+    margin: auto;
+    width: 550px;
+    aspect-ratio: inherit;
+    padding: 30px;
+    box-shadow: 10px 10px 30px 5px #ced4da;
+    background-color: white;
+
+}
+
+.fc-today-button {
+    box-shadow: 2px 2px 8px 0px #a2d6f9;
+    border-radius: 0px;
+}
+
+.fc-prev-button {
+    margin-right: 5px;
+}
