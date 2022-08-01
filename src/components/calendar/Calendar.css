@@ -66,6 +66,10 @@
     background-color: #FFEBAD;
 }
 
-/* .fc-day-today {
-    background-color: #FFEBAD;
+.fc-button-group {
+    box-shadow: 2px 2px 8px 0px #a2d6f9;
+}
+
+/* .fc-daygrid-day-events {
+    background-color: #a2d6f9;
 } */
