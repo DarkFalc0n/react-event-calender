@@ -37,7 +37,7 @@ const Calendar = () => {
     }
 
     useEffect(async () => {
-        const eventResponse = await fetch("http://localhost:3000/time_slot");
+        const eventResponse = await fetch("http://139.59.34.126:8000/api/public/timeslots/Torq03%20Ezone%20Club,%20Marathalli/laser_maze");
         const timeslots = await eventResponse.json();
         setEvents(createEvents(timeslots));
         setHolidays(parseHolidays(holidaydata));
