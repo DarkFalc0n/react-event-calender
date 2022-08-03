@@ -2,7 +2,8 @@
 This minimalistic react component uses the FullCalendar library to generate a multi-view calendar for viewing dynamic custom events.
 
 
-![event-calendar](https://user-images.githubusercontent.com/59203815/182218624-e50fa04c-ad4f-4035-956b-b59e3548bfbd.png)
+  ![image](https://user-images.githubusercontent.com/59203815/182651658-a58947ef-1659-4adc-8446-340dd1a6322a.png)
+
 
 
 ## Features
