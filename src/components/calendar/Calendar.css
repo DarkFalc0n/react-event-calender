@@ -6,7 +6,7 @@
     --fc-page-bg-color: #ffdb57;
     --fc-neutral-bg-color: #60b6fb;
     --fc-neutral-text-color: #fff;
-    --fc-border-color: #fff;
+    --fc-border-color: #dddddd;
 
     --fc-button-text-color: #fff;
     --fc-button-bg-color: #60b6fb;
@@ -17,7 +17,7 @@
     --fc-button-active-border-color: #60b6fb;
 
     --fc-event-bg-color: #3788d8;
-    --fc-event-border-color: #3788d8;
+    --fc-event-border-color: transparent;
     --fc-event-text-color: #fff;
     --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
 
@@ -63,13 +63,13 @@
 }
 
 .fc-daygrid-day-frame {
-    background-color: #FFEBAD;
+    background-color: #FFF;
 }
 
 .fc-button-group {
     box-shadow: 2px 2px 8px 0px #a2d6f9;
 }
 
-/* .fc-daygrid-day-events {
-    background-color: #a2d6f9;
-} */
+.fc-event-time {
+    display: none;
+}
